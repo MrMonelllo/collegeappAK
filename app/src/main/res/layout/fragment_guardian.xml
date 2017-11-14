@@ -3,7 +3,10 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Member Content"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,6 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id = "@+id/glast_name_edit"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/g_occupation_edit"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +30,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Family Member Content"/>
+        android:id = "@+id/g_occupation_text"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -11,4 +11,7 @@ public class Sibling  extends FamilyMember {
     public String toString(){
         return "Guardian: " + getFirstName() + " " + getLastName();
     }
+    public Sibling(){
+        super();
+    }
 }

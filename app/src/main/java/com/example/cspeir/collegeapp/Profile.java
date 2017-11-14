@@ -18,7 +18,9 @@ public class Profile extends ApplicantData{
         this.firstName = firstName;
     }
 
-
+public String getPhotoFileName(){
+        return "IMG_PROFILE.jpg";
+    }
 
     public String getLastName() {
         return lastName;

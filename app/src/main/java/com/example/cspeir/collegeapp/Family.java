@@ -8,9 +8,10 @@ import java.util.ArrayList;
 
 public class Family {
     private final static String TAG = Family.class.getName();
-    private ArrayList<FamilyMember>mFamily;
+    private ArrayList<FamilyMember> mFamily;
     private static Family sFamily;
-    private Family(){
+
+    private Family() {
         mFamily = new ArrayList<>();
         Guardian mom = new Guardian("my", "mom");
         Guardian dad = new Guardian("my", "dad");
@@ -20,18 +21,27 @@ public class Family {
         mFamily.add(sister);
 
     }
-    public static Family get(){
-        if (sFamily == null)
-        {
+
+    public static Family get() {
+        if (sFamily == null) {
             sFamily = new Family();
         }
         return sFamily;
     }
-    public ArrayList<FamilyMember> getFamily(){
+
+    public ArrayList<FamilyMember> getFamily() {
         return mFamily;
     }
-    public void setFamily(ArrayList<FamilyMember> familyList){
+
+    public void setFamily(ArrayList<FamilyMember> familyList) {
         mFamily = familyList;
+    }
+
+    public void addFamilyMember(FamilyMember familymember) {
+        mFamily.add(familymember);
+    }
+    public void deleteFamilyMember(FamilyMember familymember){
+        mFamily.remove(familymember);
     }
 
 }

@@ -23,6 +23,7 @@ import com.backendless.exceptions.BackendlessFault;
 public class ApplicantActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     public static final String EMAIL_PREF = "EMAIL_PREF";
+    private String testString = "notnull";
     private final String APP_ID = "6E3D8FDB-3E9B-4902-FFE4-CD329D593600";
     private final String API_KEY = "2C77BE69-3D0D-DE43-FFC8-8FEA9C2C5F00";
     private final String MY_EMAIL_ADRESS= "bobbymonello@gmail.com";
@@ -56,7 +57,7 @@ public class ApplicantActivity extends AppCompatActivity
 
 
 
-
+        //A comment to be added
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -107,7 +108,7 @@ public class ApplicantActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.family_member) {
-            contentFragment = new GuardianFragment();
+            contentFragment = new FamilyListFragment();
         } else if (id == R.id.profile) {
             contentFragment = new ProfileFragment();
         }
